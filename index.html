@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+  伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 石井花壇 | 温海温泉旅館【公式サイト】</title>
+  </title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="Sass/styles.scss">
+  <meta name="robots" content="noindex">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/hamburger.js"></script>
+  <link rel="icon" href="./image/logo02.png">
+  <script src="./js/hamburger.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+
+
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="l-header">
+    <div class="l-header__wrap">
+
+
+      <div class="l-header__inner">
+
+        <div class="l-header__left">
+          <img class="l-header__logo" src="./image/logo01.png">
+          <h1>石井花壇</h1>
+
+        </div>
+        <div class="l-header__right">
+          <button class="c-button__header">
+            <img src="./image/calender.png">
+
+            <a href="#">
+              宿泊予約
+            </a>
+
+
+
+          </button>
+          <button class="p-hamburger  is-hamburger ">
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="p-dropdown-menu">
+        <ul class="p-dropdown-menu__list">
+          <li class="c-dropdown-menu__item">
+
+            <a href=#>
+              <a href="#">
+                <img src="./image/logo02.png">
+              </a>
+            </a>
+
+          </li>
+          <li class="c-dropdown-menu__item">
+
+            <a href="#FEATURES">
+              お部屋
+            </a>
+
+          </li>
+          <li class="c-dropdown-menu__item">
+            <a href="#PRICE">
+              お料理
+            </a>
+
+          </li>
+          <li class="c-dropdown-menu__item">
+            <a href="#contact">
+              温泉
+            </a>
+
+          </li>
+          <!-- <li class="c-dropdown-menu__item">
+            <button class="c-button__menu">
+              <a href="#">
+              </a>
+              <img src="./image/calender.png">
+              宿泊予約
+            </button>
+
+          </li> -->
+        </ul>
+
+
+        <ul class="p-dropdown-menu__list u-border">
+          <li class="c-dropdown-menu__item2 ">
+
+
+
+            <a href="#">
+
+              宿泊予約
+              <img src="./image/calender.png">
+            </a>
+
+
+          </li>
+        </ul>
+
+
+      </nav>
+
+
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <main class="l-main">
+    <section class="p-hero">
+      <h1>
+        頑張る人の<br>
+
+
+        頑張らない時間
+
+      </h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./image/mainbg01.jpg" alt="スライダー画像1">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./image/mainbg02.jpg" alt="スライダー画像2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./image/mainbg03.jpg" alt="スライダー画像3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    let swipeOption = {
+      loop: true,
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 3000,
+    }
+    new Swiper('.swiper-container', swipeOption);
+  </script>
+</body>
