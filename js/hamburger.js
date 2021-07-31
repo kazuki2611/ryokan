@@ -3,13 +3,7 @@ $(function () {
     $(".is-hamburger").click(function () {
 
 
-        $(this).addClass("is-open")
-
-    });
-    $(".is-hamburger").click(function () {
-
-
-        $(this).removeClass("is-open")
+        $(this).toggleClass("is-open")
 
     });
     
