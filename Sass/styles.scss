@@ -46,11 +46,12 @@
     align-items: center;
     margin: 0 25px;
     height: 100%;
+    
     @include breakpoint(tablet) {
       margin: 0 40px;
     }
     @include breakpoint(pc) {
-      margin: 0;
+    
     }
   }
   h1 {
@@ -89,7 +90,7 @@
     height: 2px;
     font-size: 0;
     position: absolute;
-    background: #2498b3;
+    background: #fff;
     background-size: auto 1px;
     left: calc(50% - (20px / 2));
     top: 50%;
@@ -110,7 +111,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    background-color: #2498b3;
+    background-color: #fff;
     position: absolute;
     left: calc(50% - (20px / 2));
     display: block;
@@ -121,7 +122,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    background-color: #2498b3;
+    background-color: #fff;
     position: absolute;
     left: calc(50% - (20px / 2));
     display: block;
@@ -145,7 +146,7 @@
 
   &__list {
     align-items: center;
-    background-color: aqua;
+    background-color: #fff;
     border-radius: 10px 10px 0 0;
     @include breakpoint(table) {
       height: 400px;
@@ -249,18 +250,46 @@
 
 .u-border {
   border-radius: 0 0 10px 10px;
+  padding-bottom: 20px;
+  @include breakpoint (pc) {
+    
+    border-radius :0;
+  }
+  
 }
 .c-dropdown-menu__item2 {
+ justify-content: center;
   list-style: none;
-  border-radius: 0 0 10px 10px;
-  
+  border-radius: 10px;
+  background-color: #978F10;
+  width: 200px;
+  margin: 0 auto;
+ padding: 20px 0;
+  @include breakpoint (pc) {
+    border-radius: 0;
+    margin: 0;
+  }
+  span {
+    
+    color: rgba(0, 0, 0, 0.55);
+    vertical-align:middle;
+    border-bottom: 1px solid #e5e5e5;
+    @include breakpoint (pc) {
+      border: 0;
+      
+      color: #fff;
 
+    }
+  }
+img {
+  vertical-align:middle;
+}
   padding-bottom: 20px;
   a {
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
 
-    padding-left: 25px;
+    
     @include breakpoint(pc) {
       border: 0;
       padding: 0;

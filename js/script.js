@@ -1,9 +1,9 @@
 
-// $(function () {
-//   $('.is-hamburger').click(function () {
-//     $('.p-dropdown-menu__list').slideToggle();
-//   });
-// });
+$(function () {
+  $('.is-hamburger').click(function () {
+    $('.p-dropdown-menu__list').slideToggle();
+  });
+});
 // jQuery(function ($) {
 
 //   //質問をクリック
