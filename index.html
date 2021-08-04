@@ -15,15 +15,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/hamburger.js"></script>
+  <script src="./js/modaal.min.js"></script>
   <link rel="icon" href="./image/logo02.png">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+  <link rel="stylesheet" href="./css/modaal.min.css">
 
 
 
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
@@ -103,10 +109,65 @@
 
             <img src="./image/calender.png">
             <span href="#">
-              <a href="#">
-                宿泊予約
+              <a href="#modal" class="modal">宿泊予約</a>
 
-              </a>
+              <div id="modal" style="display:none">
+                <h1>
+                  宿泊予約
+                </h1>
+                
+
+                <table class="form-table">
+                  <tbody>
+                    <tr>
+                      <th>氏名</th>
+                      <td><input type="text" name="name" size="60" value="" placeholder="山田太郎">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>メールアドレス</th>
+                      <td><input type="text" name="email" size="60" value="" placeholder="sample@sample.jp">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>ご希望プラン（空いているプランのみ表示されます）</th>
+                      <td>
+                        <div class="cp_ipselect cp_sl01">
+                          <select required>
+                            <option value="" hidden>プランを選択してください</option>
+                            <option value="1">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                            </option>
+                            <option value="2">平日に優雅に楽しむ、特別宿泊プラン
+                            </option>
+                            <option value="3">絶景貸切露天と個室会席を満喫できるファミリープラン
+                            </option>
+
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>日時選択</th>
+                      <td>
+                        <input type="text" id="calendarTEST" placeholder="日時を選択してください">
+
+                      </td>
+
+
+                    </tr>
+                    <tr>
+                      <th>
+                        <button class="c-button__table">
+                          <a href="#">
+                            送信します
+
+                          </a>
+                        </button>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </span>
 
 
@@ -115,6 +176,7 @@
 
 
       </nav>
+
 
 
     </div>
@@ -163,4 +225,34 @@
     }
     new Swiper('.swiper-container', swipeOption);
   </script>
-</body>
+
+ 
+  <script>
+    $('.modal').modaal({
+     
+      animation_speed: '500', 	// アニメーションのスピードをミリ秒単位で指定
+      width: 550,
+      // height:600,
+     
+      overlay_opacity: '0.5',	// 背景のオーバーレイの透明度を変更
+      
+      background_scroll: 'true',	// 背景をスクロールさせるか否か
+      loading_content: 'Now Loading, Please Wait.'	// 読み込み時のテキスト表示
+    
+});
+  </script>
+
+
+
+  <script>
+    flatpickr("#calendarTEST", {
+      // 日本語対応
+      locale: "ja",
+      // 今日以降は選択できない
+      minDate: "today",
+      // 日付複数指定
+      mode: "multiple",
+      dateFormat: "Y-m-d",
+      conjunction: " :: "
+    });
+  </script>

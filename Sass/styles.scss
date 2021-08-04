@@ -82,6 +82,7 @@
   height: 50px;
   cursor: pointer;
   display: block;
+  z-index: 1000;
   @include breakpoint(pc) {
     display: none;
   }
@@ -135,9 +136,9 @@
   align-items: center;
   width: 80%;
   text-align: center;
-
+position: relative;
   margin: 100px auto 0 auto;
-
+z-index: 1000;
   @include breakpoint(pc) {
     margin: 0;
     display: flex;
@@ -352,7 +353,7 @@ img {
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 200;
   background-color: $background-color;
   opacity: 0;
   visibility: hidden;
@@ -365,4 +366,100 @@ img {
   @include breakpoint (pc) {
     display: none;
   }
+}
+.modaal-content {
+  width: 100%;
+  height: 55%;
+
+}
+.modaal-content-container {
+  h1 {
+    color: red;
+    text-align: center;
+  }
+}
+.form-table {
+  margin: 0 auto;
+  th {
+    display: block;
+  }
+  td {
+    display: block;
+   
+    border: solid 1px #E7E7E7;
+    input {
+      width: 100%;
+    }
+  }
+}
+.c-button__table {
+  display: block;
+  
+  border: solid 1px #707070;
+  height: 7%;
+  width: 36%;
+  margin: 0 auto;
+  a {
+    color:#000 ;
+    text-decoration: none;
+  }
+}
+.modaal-containe {
+ width: 80%;
+}
+#modal-1 {
+  display: none;
+}
+#modal-1.is-open {
+  display: block;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__container {
+  background-color: #fff;
+  padding: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 500px;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.modal__close {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #4caf50;
+  color: white;
+}
+.modal__btn {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #4caf50;
+  color: white;
+}
+.wrapper {
+  width: 100%;
+  height: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }

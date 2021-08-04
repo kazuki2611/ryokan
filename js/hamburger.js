@@ -4,6 +4,8 @@ $(function () {
 
 
         $(this).toggleClass("is-open")
+        $("body").toggleClass("is-open")
+       
 
     });
     
