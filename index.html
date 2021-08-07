@@ -30,6 +30,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
 </head>
 
 <body>
@@ -109,65 +110,79 @@
 
             <img src="./image/calender.png">
             <span href="#">
-              <a href="#modal" class="modal">宿泊予約</a>
+              <button>
 
-              <div id="modal" style="display:none">
-                <h1>
-                  宿泊予約
-                </h1>
-                
+                <a href="#modal" class="modal" class="modal__open" data-micromodal-trigger="modal-1">宿泊予約</a>
+              </button>
 
-                <table class="form-table">
-                  <tbody>
-                    <tr>
-                      <th>氏名</th>
-                      <td><input type="text" name="name" size="60" value="" placeholder="山田太郎">
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>メールアドレス</th>
-                      <td><input type="text" name="email" size="60" value="" placeholder="sample@sample.jp">
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>ご希望プラン（空いているプランのみ表示されます）</th>
-                      <td>
-                        <div class="cp_ipselect cp_sl01">
-                          <select required>
-                            <option value="" hidden>プランを選択してください</option>
-                            <option value="1">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-                            </option>
-                            <option value="2">平日に優雅に楽しむ、特別宿泊プラン
-                            </option>
-                            <option value="3">絶景貸切露天と個室会席を満喫できるファミリープラン
-                            </option>
+              <div id="modal-1" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
 
-                          </select>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>日時選択</th>
-                      <td>
-                        <input type="text" id="calendarTEST" placeholder="日時を選択してください">
-
-                      </td>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                      <span></span>
+                    </button>
+                    <div id="modal" id="modal-1">
+                      <h1>
+                        宿泊予約
+                      </h1>
 
 
-                    </tr>
-                    <tr>
-                      <th>
-                        <button class="c-button__table">
-                          <a href="#">
-                            送信します
+                      <table class="form-table" >
+                        <tbody>
+                          <tr>
+                            <th>お名前</th>
+                            <td><input type="text" name="name" size="60" value="" placeholder=" 例：石井正悟">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>メールアドレス</th>
+                            <td><input type="text" name="email" size="60" value="" placeholder="例：Example@example.com">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>ご希望プラン（空いているプランのみ表示されます）</th>
+                            <td>
+                              <div class="cp_ipselect cp_sl01">
+                                <select required>
+                                  <option value="" hidden>プランを選択してください</option>
+                                  <option value="1">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                                  </option>
+                                  <option value="2">平日に優雅に楽しむ、特別宿泊プラン
+                                  </option>
+                                  <option value="3">絶景貸切露天と個室会席を満喫できるファミリープラン
+                                  </option>
 
-                          </a>
-                        </button>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>日時選択</th>
+                            <td>
+                              <input type="text" id="calendarTEST" placeholder="日時を選択してください">
+
+                            </td>
+
+
+                          </tr>
+                        
+                          
+                        </tbody>
+                      </table>
+                      <button class="c-button__table">
+                        <a href="#">
+                          送信します
+
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+
+
             </span>
 
 
@@ -225,22 +240,29 @@
     }
     new Swiper('.swiper-container', swipeOption);
   </script>
-
- 
   <script>
+    MicroModal.init({
+      openClass: 'is-open',
+      disableScroll: true,
+    });
+  </script>
+
+
+  <!-- <script>
     $('.modal').modaal({
-     
+
       animation_speed: '500', 	// アニメーションのスピードをミリ秒単位で指定
-      width: 550,
+      // width: 550,
       // height:600,
-     
+
       overlay_opacity: '0.5',	// 背景のオーバーレイの透明度を変更
-      
+
       background_scroll: 'true',	// 背景をスクロールさせるか否か
       loading_content: 'Now Loading, Please Wait.'	// 読み込み時のテキスト表示
-    
-});
-  </script>
+
+    });
+  </script> -->
+
 
 
 
@@ -256,3 +278,4 @@
       conjunction: " :: "
     });
   </script>
+</body>
