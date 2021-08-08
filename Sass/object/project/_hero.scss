@@ -1,0 +1,45 @@
+.p-hero {
+  //  background-image:url(../image/mainbg01.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  h1 {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    writing-mode: vertical-rl;
+    color: #fff;
+    z-index: 999;
+    font-size: 28px;
+    line-height: 4rem;
+    @include breakpoint(tablet) {
+      left: 67%;
+      line-height: 6rem;
+      font-size: 30px;
+    }
+    @include breakpoint(pc) {
+      font-size: 34px;
+    }
+  }
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: $background-color;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.is-open .black-bg {
+  opacity: 0.8;
+  visibility: visible;
+  
+  @include breakpoint(pc) {
+    display: none;
+  }
+}

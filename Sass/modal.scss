@@ -1,0 +1,182 @@
+.modaal-content {
+  width: 100%;
+  height: 55%;
+ 
+}
+
+
+
+
+#modal span {
+  border-bottom: solid 1px #000;
+}
+#modal {
+  // padding: 0 20px;
+  @include breakpoint(pc) {
+    // padding: 0 60px;
+    margin-top: -30px;
+  }
+}
+#modal-1 {
+  display: none;
+}
+#modal-1.is-open {
+  display: block;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.is-open {
+    overflow-x: hidden;
+  }
+}
+.modal__container {
+  background-color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 80%;
+  height: 450px;
+  
+  @include breakpoint(tablet) {
+    width: 500px;
+    height: 550px;
+  }
+  @include breakpoint(pc) {
+    padding: 30px;
+    width: 520px;
+    height: 580px;
+  }
+  border-radius: 4px;
+  // overflow-y: auto;
+  box-sizing: border-box;
+  h1 {
+    width: 70%;
+    margin: 0 auto;
+    font-family: "游明朝体";
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    border-bottom: solid 1px #e7e7e7;
+    @include breakpoint(pc) {
+      width: 90%;
+      margin-bottom: 32.5px;
+      padding-bottom: 27.5px;
+      font-size: 20px;
+    }
+  }
+}
+.modal__close {
+  width: 18px;
+  height: 18px;
+
+  right: -40%;
+  @include breakpoint(pc) {
+    height: 18px;
+    width: 18px;
+    right: -50%;
+    top: -30px;
+  }
+  position: relative;
+  cursor: pointer;
+  // display: block;
+  z-index: 1000;
+  @include breakpoint(pc) {
+  }
+  span {
+    width: 30px;
+    height: 2px;
+    font-size: 0;
+    position: absolute;
+    background: #000;
+    background-size: auto 1px;
+    left: calc(50% - (20px / 2));
+    top: 50%;
+    transition: transform 0.2s;
+    display: none;
+  }
+  &.is-open span {
+    display: none;
+  }
+  &.is-open::after {
+    transform: rotate(-45deg);
+    top: 24px;
+  }
+  &.is-open::before {
+    transform: rotate(45deg);
+    top: 24px;
+  }
+  &::before {
+    width: 26px;
+    @include breakpoint(pc) {
+      width: 30px;
+    }
+    content: "";
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - (20px / 2));
+    display: block;
+    transition: transform 0.2s;
+    bottom: 15px;
+    transform: rotate(45deg);
+    top: 24px;
+  }
+  &::after {
+    width: 26px;
+    @include breakpoint(pc) {
+      width: 30px;
+    }
+    content: "";
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - (20px / 2));
+    display: block;
+    transition: transform 0.2s;
+    top: 15px;
+    transform: rotate(-45deg);
+    top: 24px;
+  }
+}
+.modal__btn {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #4caf50;
+  color: white;
+}
+.wrapper {
+  width: 100%;
+  height: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cp_ipselect {
+  select {
+    width: 100%;
+    color: #797878;
+    padding-left: 10px;
+    font-size: 13px;
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
+    @include breakpoint(pc) {
+      font-size: 16px;
+    }
+  }
+}

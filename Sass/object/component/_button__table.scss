@@ -1,0 +1,24 @@
+.c-button__table {
+  margin: 5% auto 7% auto;
+  @include breakpoint(tablet) {
+    margin: 7% auto 5% auto;
+  }
+  @include breakpoint(pc) {
+    margin: 10% auto 15% auto;
+    width: 198px;
+    height: 7%;
+  }
+  display: block;
+
+  border: solid 1px #707070;
+  a {
+    font-size: 14px;
+    color: #000;
+    @include breakpoint(pc) {
+      font-size: 16px;
+    }
+    line-height: 1.68;
+    color: #000;
+    text-decoration: none;
+  }
+}

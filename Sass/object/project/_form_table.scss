@@ -1,0 +1,60 @@
+.p-form_table {
+  table-layout: fixed;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  @include breakpoint(pc) {
+    margin-top: 5%;
+    width: 90%;
+  }
+  tr {
+    margin-top: 20px;
+    @include breakpoint(pc) {
+      margin-top: 2%;
+    }
+  }
+  th {
+    // width: 198px;
+    font-size: 1em;
+    margin-top:10px ;
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+    @include breakpoint(tablet) {
+      margin-top: 20px;
+      width: 100%;
+    }
+    @include breakpoint(pc) {
+      padding-bottom: 2%;
+
+      margin-top: 14px;
+      font-size: 16px;
+    }
+    font-family: "游明朝体";
+    line-height: 1.68;
+    text-align: left;
+    display: block;
+    color: #000;
+  }
+  td {
+    @include breakpoint(pc) {
+      width: 100%;
+    }
+    display: block;
+    border: solid 1px #e7e7e7;
+    input {
+      font-size: 13px;
+      width: 100%;
+      @include breakpoint(tablet) {
+        font-size: 16px;
+      }
+      @include breakpoint(pc) {
+        font-size: 18px;
+        height: 32px;
+        width: 100%;
+        padding-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.c-header__button {
+  @include breakpoint(pc) {
+    order: 3;
+    // position: absolute;
+    // right: 5%;
+    // z-index: 1000;
+  }
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+ 
+  margin-left: auto;
+  margin-right: 1%;
+  background-color: #978f10;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  @include breakpoint(tablet) {
+    height: 54px;
+    width: 18%;
+  }
+  @include breakpoint (pc) {
+    width: 15%;
+    margin-right: 20px;
+  }
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    @include breakpoint(tablet) {
+      font-size: 18px;
+    }
+    @include breakpoint(pc) {
+      font-size: 20px;
+    }
+  }
+  img {
+    height: 17px;
+    width: 17px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 5%;
+    @include breakpoint(tablet) {
+      height: 22px;
+      width: 22px;
+    }
+  }
+  span {
+    align-items: center;
+    justify-content: center;
+  }
+}
