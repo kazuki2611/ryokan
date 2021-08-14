@@ -1,0 +1,7 @@
+.c-plan__wrap__text {
+  padding-top: 20px;
+  font-size: 16px;
+  @include breakpoint(pc) {
+    margin-top: 32px;
+  }
+}

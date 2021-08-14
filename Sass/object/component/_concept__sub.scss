@@ -1,0 +1,9 @@
+.c-concept__sub {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @include breakpoint(tablet) {
+    margin-right: 14%;
+    margin-bottom: 0;
+  }
+}

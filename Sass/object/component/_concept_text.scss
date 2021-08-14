@@ -1,0 +1,16 @@
+.c-concept_text {
+  letter-spacing: 0.4em;
+  margin-top: 50px;
+  font-size: 15px;
+  text-orientation: upright;
+
+  @include breakpoint(tablet) {
+    margin-right: 10%;
+    line-height: 2rem;
+  }
+  @include breakpoint(pc) {
+    margin-top: 129px;
+    margin-right: 20%;
+    line-height: 2rem;
+  }
+}

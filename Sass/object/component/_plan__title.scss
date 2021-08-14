@@ -1,0 +1,11 @@
+.c-plan__title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  @include breakpoint(tablet) {
+    font-size: 34px;
+  }
+  @include breakpoint(pc) {
+    font-size: 36px;
+  }
+}

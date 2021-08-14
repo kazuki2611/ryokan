@@ -1,0 +1,11 @@
+.c-service__box__title {
+  width: 80%;
+  font-size: 32px;
+  line-height: 1.7;
+  padding-right: 10px;
+  @include breakpoint(tablet) {
+    width: auto;
+    font-size: 34px;
+    padding-top: 30px;
+  }
+}

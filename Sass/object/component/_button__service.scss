@@ -1,0 +1,15 @@
+.c-button__service {
+  margin-top: 50px;
+  width: 200px;
+  height: 56px;
+  border: solid 1px #707070;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    @include breakpoint(tablet) {
+      color: #000;
+    }
+  }
+}
