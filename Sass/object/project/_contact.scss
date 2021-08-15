@@ -1,0 +1,40 @@
+.p-contact {
+  background-image: url(../image/bg3.png);
+  &__menu {
+    writing-mode: vertical-rl;
+
+    margin: 0 auto;
+    padding-top: 40px;
+    line-height: 3;
+    font-size: 18px;
+    @include breakpoint (tablet) {
+      padding-top: 60px;
+    }
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      list-style: none;
+    }
+  }
+  &__logo {
+    text-align: center;
+    padding-top: 80px;
+   @include breakpoint (tablet) {
+     padding-top:96px ;
+   }
+   
+  }
+  &__address {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include breakpoint (tablet) {
+      padding-top: 72px;
+    }
+    span {
+      padding-left: 20px;
+    }
+  }
+}

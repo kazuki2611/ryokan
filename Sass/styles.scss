@@ -23,21 +23,24 @@
 @import "object/component/concept_text";
 @import "object/component/concept__sub";
 
-
 @import "object/project/service";
 @import "object/component/service__box__title";
 @import "object/component/service__box__text";
 @import "object/component/button__service";
 @import "object/utility/padding";
 
-
-
 @import "object/project/plan";
 @import "object/component/plan__title";
 @import "object/component/plan__wrap__title";
 @import "object/component/plan__wrap__text";
 
-
 @import "object/project/news";
+@import "object/project/access";
 
+@import "object/component/access__content__text";
+
+@import "object/project/contact";
+@import "object/component/contact__logo__title";
+
+@import "layout/footer";
 

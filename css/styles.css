@@ -312,7 +312,7 @@ progress {
 }
 
 body {
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif ,"凸版文久見出し明朝";
   width: 100%;
   overflow-x: hidden;
 }
@@ -1626,5 +1626,191 @@ html.is-open {
     font-size: 16px;
     padding-top: 10px;
   }
+}
+
+.p-access {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .p-access {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-access__wrap {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-access__wrap {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-access__wrap {
+    width: 100%;
+  }
+}
+
+.p-access__image {
+  margin-top: 30px;
+}
+
+@media (min-width: 1280px) {
+  .p-access__image {
+    width: 40%;
+  }
+}
+
+.p-access__image img {
+  height: 300px;
+  width: 90%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .p-access__image img {
+    width: 100%;
+  }
+}
+
+.p-access__image__map {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .p-access__image__map {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-access__image__map {
+    margin-top: 70px;
+  }
+}
+
+.p-access__image__map img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .p-access__image__map img {
+    height: 500px;
+    margin-top: 30px;
+  }
+}
+
+.p-access__content {
+  text-align: left;
+  width: 90%;
+  padding-top: 10px;
+  line-height: 2;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .p-access__content {
+    padding-left: 50px;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-access__content {
+    width: 40%;
+    padding-left: 80px;
+  }
+}
+
+.c-access__content__text {
+  font-size: 16px;
+}
+
+.p-contact {
+  background-image: url(../image/bg3.png);
+}
+
+.p-contact__menu {
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40px;
+  line-height: 3;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .p-contact__menu {
+    padding-top: 60px;
+  }
+}
+
+.p-contact__menu li {
+  list-style: none;
+}
+
+.p-contact__menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.p-contact__logo {
+  text-align: center;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .p-contact__logo {
+    padding-top: 96px;
+  }
+}
+
+.p-contact__address {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .p-contact__address {
+    padding-top: 72px;
+  }
+}
+
+.p-contact__address span {
+  padding-left: 20px;
+}
+
+.c-contact__logo__title {
+  padding-top: 20px;
+  font-size: 28px;
+  font-family: "凸版文久見出し明朝";
+}
+
+.l-footer {
+  background-color: #000;
+  width: 100%;
+  height: 60px;
+}
+
+.l-footer p {
+  color: #fff;
+  padding-top: 23px;
+  line-height: 2;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
