@@ -1,6 +1,6 @@
 $(function () {
 
-    $(".is-hamburger").on('click', function () {
+    $(".is-hamburger , .p-hamburger__single").on('click', function () {
 
 
         $(this).toggleClass("is-open")

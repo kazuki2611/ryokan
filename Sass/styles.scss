@@ -44,3 +44,34 @@
 
 @import "layout/footer";
 
+.c-hero__single__title {
+  padding-top: 250px;
+  color: #fff;
+}
+.c-service__wrap__single__title {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  @include breakpoint (tablet) {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+.c-service__wrap__single__text {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.u-flex {
+  flex-direction: row-reverse;
+  
+}
+.u-position {
+  @include breakpoint (tablet) {
+    position: absolute;
+    left: 0%;
+    width: 70%;
+    padding: 0 180px 0 40px;
+
+  }
+}
