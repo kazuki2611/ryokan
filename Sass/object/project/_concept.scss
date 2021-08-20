@@ -7,7 +7,12 @@
   font-family: "游明朝体";
   padding: 20px;
   display: block;
-
+@include breakpoint (tablet) {
+  padding-bottom: 80px;
+}
+@include breakpoint (pc) {
+  padding-bottom: 120px;
+}
   &__inner {
     @include breakpoint(tablet) {
       margin: 0 auto;

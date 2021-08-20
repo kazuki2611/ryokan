@@ -8,7 +8,41 @@
   line-height: 1.2;
   box-shadow: 0px 3px 6px #00000029;
   align-items: center;
+  font-family: "游明朝体";
+  font-weight: 800;
+  &.scroll-nav {
+    background-color: #fff;
+    
+    a {
+      color: #000;
+    }
+    .p-hamburger::before {
+      background-color: #000;
+    }
+    .p-hamburger span {
+      background-color: #000;
+    }
+    .p-hamburger::after {
+      background-color: #000;
+    }
+  }
+  &__left {
+    h1 {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  
   &__single {
+    background-color: #fff;
+    h1 {
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
     color: #000;
   }
   &__right {
@@ -31,7 +65,7 @@
     }
   }
   @include breakpoint(pc) {
-    display: flex;
+   
     align-items: center;
     justify-content: flex-start;
     font-weight: bold;
@@ -61,7 +95,6 @@
     }
     @include breakpoint(pc) {
       order: 1;
-    
     }
   }
   h1 {

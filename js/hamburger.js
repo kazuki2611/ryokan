@@ -4,10 +4,21 @@ $(function () {
 
 
         $(this).toggleClass("is-open")
-        $("html").toggleClass("is-open")
+        $("html").toggleClass("is-open") 
+       
 
 
     });
+    // 背景をクリックしても消える設定
+    $("#js-black-bg").on('click', function () {
+        $('.p-dropdown-menu__list').slideToggle();
+
+        $("html").toggleClass("is-open") 
+        $(".is-hamburger, .p-hamburger__single").toggleClass("is-open") 
+
+
+    });
+    
 
 
 

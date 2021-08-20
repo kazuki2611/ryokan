@@ -1,0 +1,8 @@
+.p-information {
+  margin-top: 200px;
+ width: 80%;
+ margin: 200px auto;
+ @include breakpoint (pc) {
+  max-width: 1000px;
+ }
+}

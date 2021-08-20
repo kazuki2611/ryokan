@@ -1,4 +1,10 @@
 .u-padding {
+  &__botton {
+    padding-bottom: 80px;
+    @include breakpoint (pc) {
+      padding-bottom: 110px;
+    }
+  }
   @include breakpoint(tablet) {
     padding-top: 70px;
   }

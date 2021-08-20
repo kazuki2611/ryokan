@@ -1,5 +1,6 @@
 .c-plan__wrap__title {
   font-size: 20px;
+  font-weight: 500;
   @include breakpoint(pc) {
     margin-top: 32px;
   }

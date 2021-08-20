@@ -2,7 +2,7 @@
   font-size: 24px;
   line-height: 3rem;
   letter-spacing: 0.7em;
-
+font-weight: 500;
   span {
     @include breakpoint(tablet) {
       padding-top: 50px;
