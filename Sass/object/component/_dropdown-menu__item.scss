@@ -1,7 +1,7 @@
 .c-dropdown-menu__item {
   padding: 20px;
   align-items: center;
-  align-items: center;
+ 
   list-style: none;
   justify-content: center;
   @include breakpoint(pc) {
@@ -12,7 +12,9 @@
   }
   a {
     align-items: center;
-    border-bottom: 1px solid #e5e5e5;
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    }
     @include breakpoint(pc) {
       border: none;
     }

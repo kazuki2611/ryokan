@@ -211,18 +211,22 @@
   <main class="l-main__single">
     <section class="p-hero__single__ryori">
       <h1 class="c-hero__single__title">
-       お料理
+        お料理
       </h1>
 
     </section>
     <section class="p-service__single">
       <div class="p-service__inner__single">
         <div class="p-service__container">
-          <a href="./index.html">
-            トップ
-          </a>
-             > お料理
-          <p>
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="./index.html">トップ</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="./index.html">お部屋</a>
+          </li>
+        </ol>
+
           <p data-aos="fade-up" data-aos-duration="2000">
             創業より受け継がれてきた石井花壇の和の造り<br>
             温海の雄大な絶景を堪能していただけるように設計された客室<br>
@@ -330,7 +334,7 @@
             山形県鶴岡市xxxxxxxxxxx
           </span>
         </p>
-        <p data-aos="fade-up" data-aos-duration="2000" >
+        <p data-aos="fade-up" data-aos-duration="2000">
           <span>
             TEL.000-0000-0000
           </span>
@@ -401,4 +405,25 @@
   <script>
     AOS.init();
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "トップ",
+          "item": "https://kazuima.com/shogo2/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "お料理",
+          "item": "https://kazuima.com/shogo2/ryori.html"
+        }
+      ]
+    }
+    </script>
+   
 </body>

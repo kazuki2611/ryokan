@@ -43,15 +43,32 @@
 @import "object/component/contact__logo__title";
 
 @import "layout/footer";
-@import "object/component/c-hero__single__title";
-@import "object/component/c-service__wrap__single__title";
-@import "object/component/c-service__wrap__single__text";
+@import "object/component/hero__single__title";
+@import "object/component/service__wrap__single__title";
+@import "object/component/service__wrap__single__text";
 
 @import "object/utility/u-flex";
 @import "object/utility/u-position";
 @import "object/project/information";
 
-@import "object/component/c-information__title";
+@import "object/component/information__title";
 
 
 @import "object/project/table";
+.breadcrumb__list {
+  display: flex;
+  list-style: none;
+  
+
+}
+.breadcrumb__item {
+&::after{
+    content: '>';
+    display: inline-block;
+    padding: 0 10px; /*左右に余白*/
+  }
+  
+  &:last-child::after{
+    display: none;
+  }
+}

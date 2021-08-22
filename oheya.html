@@ -218,10 +218,14 @@
     <section class="p-service__single">
       <div class="p-service__inner__single">
         <div class="p-service__container">
-          <a href="./index.html">
-            トップ
-          </a>
-             > お部屋
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="./index.html">トップ</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="./oheya.html">お部屋</a>
+            </li>
+          </ol>
           <p data-aos="fade-up" data-aos-duration="2000" >
             創業より受け継がれてきた石井花壇の和の造り<br>
             温海の雄大な絶景を堪能していただけるように設計された客室<br>
@@ -329,14 +333,14 @@
             山形県鶴岡市xxxxxxxxxxx
           </span>
         </p>
-        <pdata-aos="fade-up" data-aos-duration="2000" >
+        <p data-aos="fade-up" data-aos-duration="2000" >
           <span>
             TEL.000-0000-0000
           </span>
           <span>
             FAX.00-0000-0000
           </span>
-        </pdata-aos=>
+        </p>
       </div>
     </section>
   </main>
@@ -400,4 +404,24 @@
    <script>
      AOS.init();
    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "トップ",
+            "item": "https://kazuima.com/shogo2/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "お部屋",
+            "item": "https://kazuima.com/shogo2/oheya.html"
+          }
+        ]
+      }
+      </script>
 </body>
