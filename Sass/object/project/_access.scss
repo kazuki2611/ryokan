@@ -4,7 +4,10 @@
   text-align: center;
   background-image: url(../image/bg.png);
   padding-bottom: 80px;
-  @include breakpoint (tablet) {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  @include breakpoint(tablet) {
     padding-top: 40px;
   }
   @include breakpoint(pc) {
@@ -29,7 +32,6 @@
     }
   }
   &__image {
-  
     img {
       height: 300px;
       width: 90%;
@@ -39,21 +41,17 @@
       }
     }
     iframe {
-     width: 90%;
-     margin-top: 40px;
-   
-     
-     @include breakpoint (tablet) {
-       width: 80%;
-     }
-      @include breakpoint (pc) {
+      width: 90%;
+      margin-top: 40px;
+
+      @include breakpoint(tablet) {
+        width: 80%;
+      }
+      @include breakpoint(pc) {
         width: 60%;
         margin-top: 69px;
       }
-    
-
     }
-    
   }
   &__content {
     text-align: left;

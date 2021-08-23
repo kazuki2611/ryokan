@@ -851,6 +851,7 @@ html.is-open {
   font-family: "游明朝体";
   font-weight: 800;
   line-height: 4rem;
+  letter-spacing: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1536,6 +1537,16 @@ html.is-open {
   }
 }
 
+.p-service__box__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 768px) {
   .p-service__box__image {
     width: 140%;
@@ -1602,6 +1613,7 @@ html.is-open {
   font-size: 32px;
   line-height: 1.7;
   padding-right: 10px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -1636,7 +1648,13 @@ html.is-open {
   margin-top: 50px;
   width: 200px;
   height: 56px;
-  border: solid 1px #707070;
+  border: solid 1px #fff;
+}
+
+@media (min-width: 768px) {
+  .c-button__service {
+    border: solid 1px #707070;
+  }
 }
 
 .c-button__service a {
@@ -1649,6 +1667,10 @@ html.is-open {
   .c-button__service a {
     color: #000;
   }
+}
+
+.u-padding {
+  z-index: 100;
 }
 
 .u-padding__botton {
@@ -1943,6 +1965,9 @@ html.is-open {
   text-align: center;
   background-image: url(../image/bg.png);
   padding-bottom: 80px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -2079,6 +2104,7 @@ html.is-open {
 }
 
 .p-contact__menu li {
+  letter-spacing: 0.5rem;
   list-style: none;
 }
 

@@ -1,4 +1,5 @@
 .u-padding {
+  z-index: 100;
   &__botton {
     padding-bottom: 80px;
     @include breakpoint (pc) {

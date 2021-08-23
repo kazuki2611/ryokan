@@ -2,8 +2,13 @@
   margin-top: 50px;
   width: 200px;
   height: 56px;
-  border: solid 1px #707070;
 
+  border: solid 1px #fff;
+  @include breakpoint (tablet) {
+
+    border: solid 1px #707070;
+  }
+  
   a {
     text-decoration: none;
     color: #fff;

@@ -1,16 +1,16 @@
 .p-service {
   width: 100%;
-  
-  @include breakpoint (tablet) {
+
+  @include breakpoint(tablet) {
     padding-bottom: 50px;
   }
-  @include breakpoint (pc) {
+  @include breakpoint(pc) {
     padding-bottom: 78px;
   }
   &__inner__single {
     font-family: "游明朝体";
     @include breakpoint(tablet) {
-    max-width: 750px;
+      max-width: 750px;
       margin: 0 auto;
     }
     @include breakpoint(pc) {
@@ -65,8 +65,8 @@
 .p-service__box {
   width: 100%;
   position: relative;
-font-family: "游明朝体";
-font-weight: 500;
+  font-family: "游明朝体";
+  font-weight: 500;
   @include breakpoint(tablet) {
     position: static;
     display: flex;
@@ -86,6 +86,16 @@ font-weight: 500;
     }
   }
   &__image {
+   &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+   }
     @include breakpoint(tablet) {
       width: 140%;
     }
@@ -93,7 +103,7 @@ font-weight: 500;
       width: 100%;
       height: 600px;
       object-fit: cover;
-
+    
       @include breakpoint(tablet) {
         padding: 90px 0 0 0;
       }

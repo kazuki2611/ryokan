@@ -3,7 +3,7 @@
   font-size: 32px;
   line-height: 1.7;
   padding-right: 10px;
-  
+  font-weight: 500;
   @include breakpoint(tablet) {
     width: auto;
     font-size: 34px;
