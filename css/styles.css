@@ -1548,6 +1548,12 @@ html.is-open {
 }
 
 @media (min-width: 768px) {
+  .p-service__box__image::before {
+    position: static;
+  }
+}
+
+@media (min-width: 768px) {
   .p-service__box__image {
     width: 140%;
   }
